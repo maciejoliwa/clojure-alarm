@@ -16,7 +16,7 @@
 (defn run-alarm
   []
   (println "! WAKE UP ! WAKE UP ! WAKE UP !")
-  (let [ls '(0 1 2 3 4 5 6 7 8 9)
+  (let [ls '("a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" 0 1 2 3 4 5 6 7 8 9)
         password (reduce str (shuffle ls))]
     (println (str "Password: " password))
     (print "> ")
