@@ -37,7 +37,6 @@
       (cond
         (and (= @current-hour hour) (= @current-minute minutes)) (reset! alarm-off? false)
         :else (do
-                (println @current-hour)
                 (println "waiting...")
                 (reset! current-hour (first (get-time)))
                 (reset! current-minute (last (get-time))))))
