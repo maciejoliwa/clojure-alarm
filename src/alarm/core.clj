@@ -40,6 +40,6 @@
                 (println "waiting...")
                 (reset! current-hour (first (get-time)))
                 (reset! current-minute (last (get-time))))))
-    (reset! one-piece-opening (audio/play audio-read))
+    (reset! one-piece-opening (audio/play (audio/gain audio-read 5)))
     (run-alarm)))
 
